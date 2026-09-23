@@ -12,7 +12,7 @@ Adding a source is one entry in `lib/models/news_source.dart` plus one style in 
 
 ## App icon
 
-`assets/icon/app_icon_512x512.png` is the Google Play hi-res icon (a lightning bolt on a dark violet background). `./tool/generate_app_icons.sh` regenerates it and **every launcher icon** from the SVG sources (`app_icon.svg`, `app_icon_foreground.svg`): Android legacy and adaptive icons, all iOS sizes, and the web/PWA icons. Edit the glyph or colours in that script and re-run it. It needs Google Chrome and macOS `sips`. The splash logo is a separate file and is not touched.
+`assets/icon/app_icon_512x512.png` is the Google Play hi-res icon (a lightning bolt over the word "Games" on a dark violet background). `./tool/generate_app_icons.sh` regenerates it and **every launcher icon** from the SVG sources (`app_icon.svg`, `app_icon_foreground.svg`): Android legacy and adaptive icons, all iOS sizes, and the web/PWA icons. Edit the glyph or colours in that script and re-run it. It needs Google Chrome, macOS `sips` and network access (the "Games" text uses Montserrat from Google Fonts while rendering). The splash logo is a separate file and is not touched.
 
 ## Splash screen
 

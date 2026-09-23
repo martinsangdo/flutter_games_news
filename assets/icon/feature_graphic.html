@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Games News - Google Play feature graphic (1024 x 500)</title>
+<!-- Source of feature_graphic.png. Render with:
+     tool/render_feature_graphic.sh  (headless Chrome, exact 1024x500) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --violet: #6C4DFF;   /* AppTheme.violet */
+    --cyan:   #00A3C4;   /* AppTheme.cyan   */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1024px; height: 500px; overflow: hidden; }
+  body {
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(115deg, #5A3BEA 0%, var(--violet) 38%, #2E7FDB 72%, var(--cyan) 100%);
+    position: relative;
+  }
+
+  /* soft light + dot texture */
+  .glow { position: absolute; border-radius: 50%; filter: blur(2px); }
+  .glow.a { width: 520px; height: 520px; left: -160px; top: -220px;
+            background: radial-gradient(circle, rgba(255,255,255,.22), rgba(255,255,255,0) 68%); }
+  .glow.b { width: 620px; height: 620px; right: -120px; bottom: -300px;
+            background: radial-gradient(circle, rgba(0,229,255,.38), rgba(0,229,255,0) 66%); }
+  .dots { position: absolute; inset: 0;
+          background-image: radial-gradient(rgba(255,255,255,.16) 1.4px, transparent 1.6px);
+          background-size: 26px 26px;
+          -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 45%, #000 100%);
+                  mask-image: linear-gradient(90deg, transparent 0%, #000 45%, #000 100%); }
+
+  /* left: copy (kept inside the central safe area) */
+  .copy { position: absolute; left: 64px; top: 0; width: 560px; height: 500px;
+          display: flex; flex-direction: column; justify-content: center; }
+  .kicker { font-size: 15px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase;
+            color: rgba(255,255,255,.82); margin-bottom: 14px; }
+  h1 { font-size: 92px; line-height: .95; font-weight: 800; letter-spacing: -.035em; }
+  h1 span { color: #B8FFF4; }
+  .tag { margin-top: 20px; font-size: 27px; line-height: 1.3; font-weight: 500;
+         color: rgba(255,255,255,.94); max-width: 470px; }
+  .chips { margin-top: 30px; display: flex; flex-wrap: nowrap; gap: 7px; }
+  .chip { font-size: 13.5px; font-weight: 700; padding: 7px 12px; white-space: nowrap; border-radius: 999px;
+          background: rgba(255,255,255,.18); border: 1.5px solid rgba(255,255,255,.55); }
+
+  /* right: stylised phone showing the feed */
+  .phone { position: absolute; left: 690px; top: 52px; width: 258px; height: 560px;
+           border-radius: 40px; background: #0E0D16; padding: 9px;
+           transform: rotate(7deg); transform-origin: 50% 0;
+           box-shadow: 0 30px 60px rgba(10,5,60,.55), 0 0 0 2px rgba(255,255,255,.18); }
+  .screen { width: 100%; height: 100%; border-radius: 32px; background: #F7F6FD; overflow: hidden;
+            position: relative; }
+  .notch { position: absolute; left: 50%; top: 9px; width: 66px; height: 18px; margin-left: -33px;
+           background: #0E0D16; border-radius: 12px; z-index: 3; }
+  .app-title { padding: 40px 16px 6px; font-size: 20px; font-weight: 800; color: #1C1B22; letter-spacing: -.02em; }
+  .app-title b { color: #5B3DF0; }
+  .tabs { display: flex; gap: 12px; padding: 4px 16px 8px; font-size: 10px; font-weight: 700; color: #6b6878; }
+  .tabs .on { color: #5B3DF0; border-bottom: 2px solid #5B3DF0; padding-bottom: 4px; }
+  .card { margin: 0 12px 9px; height: 72px; border-radius: 14px; background: #fff;
+          border: 1px solid #E3E0EF; display: flex; gap: 10px; padding: 8px; }
+  .thumb { width: 56px; height: 56px; border-radius: 10px; flex: none; }
+  .t1 { background: linear-gradient(135deg, #FF6B8B, #6C4DFF); }
+  .t2 { background: linear-gradient(135deg, #00C2A8, #2E7FDB); }
+  .t3 { background: linear-gradient(135deg, #FFB347, #F65002); }
+  .t4 { background: linear-gradient(135deg, #7BDFF2, #6C4DFF); }
+  .t5 { background: linear-gradient(135deg, #B388FF, #00A3C4); }
+  .lines { flex: 1; padding-top: 4px; }
+  .lines .l { height: 7px; border-radius: 4px; background: #2A2833; margin-bottom: 6px; }
+  .lines .l.s { width: 62%; }
+  .lines .m { height: 6px; width: 44px; border-radius: 3px; background: #5B3DF0; margin-top: 10px; opacity: .9; }
+  .nav { position: absolute; left: 0; right: 0; bottom: 0; height: 52px; background: #F0ECF6;
+         display: flex; justify-content: space-around; align-items: center; }
+  .nav i { width: 24px; height: 24px; border-radius: 8px; background: #B9B3CF; }
+  .nav i.on { background: #5B3DF0; }
+</style>
+</head>
+<body>
+  <div class="glow a"></div>
+  <div class="glow b"></div>
+  <div class="dots"></div>
+
+  <div class="copy">
+    <div class="kicker">Video game news</div>
+    <h1>Games<br><span>News</span></h1>
+    <p class="tag">Every game headline, in one simple feed.</p>
+    <div class="chips">
+      <span class="chip">PC</span><span class="chip">PlayStation</span><span class="chip">Xbox</span>
+      <span class="chip">Nintendo</span><span class="chip">Hardware</span><span class="chip">Reviews</span>
+    </div>
+  </div>
+
+  <div class="phone">
+    <div class="screen">
+      <div class="notch"></div>
+      <div class="app-title">Games<b>News</b></div>
+      <div class="tabs"><span class="on">All</span><span>PC</span><span>PlayStation</span><span>Xbox</span></div>
+      <div class="card"><div class="thumb t1"></div><div class="lines"><div class="l"></div><div class="l s"></div><div class="m"></div></div></div>
+      <div class="card"><div class="thumb t2"></div><div class="lines"><div class="l"></div><div class="l s"></div><div class="m"></div></div></div>
+      <div class="card"><div class="thumb t3"></div><div class="lines"><div class="l"></div><div class="l s"></div><div class="m"></div></div></div>
+      <div class="card"><div class="thumb t4"></div><div class="lines"><div class="l"></div><div class="l s"></div><div class="m"></div></div></div>
+      <div class="card"><div class="thumb t5"></div><div class="lines"><div class="l"></div><div class="l s"></div><div class="m"></div></div></div>
+      <div class="nav"><i class="on"></i><i></i><i></i></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs><radialGradient id="bg" cx="0.3" cy="0.25" r="1">
+    <stop offset="0" stop-color="#3B2BB8"/><stop offset="0.55" stop-color="#171436"/><stop offset="1" stop-color="#0B0A18"/>
+  </radialGradient></defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;display=swap');</style>
+    <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7CF3FF"/><stop offset="1" stop-color="#8B6CFF"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(256 256) scale(0.88) translate(-256 -241)">
+    <g transform="translate(256 183) scale(0.62) translate(-262 -256)">
+      <path d="M306 52L140 292H236L200 460L376 208H272Z" fill="url(#bolt)" stroke="url(#bolt)" stroke-width="14" stroke-linejoin="round"/>
+      <rect x="112" y="382" width="36" height="36" rx="8" fill="#00E5FF"/>
+      <rect x="392" y="104" width="24" height="24" rx="6" fill="#B9A8FF"/>
+    </g>
+    <text x="256" y="430" text-anchor="middle" fill="#fff" font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="124" letter-spacing="-2">Games</text>
+  </g>
+</svg>
